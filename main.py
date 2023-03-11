@@ -42,7 +42,7 @@ def set_up_bucket():
     bucket = client.get_bucket('scraper23')
     return bucket
 
-def main(request):
+def main(data,contest):
     def script(queue):
         try:
             bucket = set_up_bucket()

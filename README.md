@@ -4,7 +4,7 @@ This is the configuration to follow to extract data at a given time set in
 your Pub/Sub cron
 ```mermaid
 flowchart LR
-Pub/Sub --> Scraper living in Cloud Function --> id1[(Bucket)]
+[Pub/Sub] --> [Scraper living in Cloud Function] --> [(Bucket)]
 ```
 
 Refs:

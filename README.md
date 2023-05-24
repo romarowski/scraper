@@ -2,13 +2,9 @@
 
 This is the configuration to follow to extract data at a given time set in 
 your Pub/Sub cron
-```flow
-st=>start: Pub/Sub 
-op=>operation: Scraper living in Cloud Function
-save=>operation: Save to Bucket
-e=>end
-
-st->op->save->e
+```mermaid
+flowchart LR
+Pub/Sub --> Scraper living in Cloud Function --> id1[(Bucket)]
 ```
 
 Refs:
